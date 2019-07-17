@@ -1,0 +1,30 @@
+{
+  "name": "create-hengine-app",
+  "version": "0.1.0",
+  "description": "Init an `hengine` app.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "rm -r test & node index -h & node index demo -d test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huang2002/create-hengine-app.git"
+  },
+  "keywords": [
+    "hengine",
+    "init"
+  ],
+  "author": "3h",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huang2002/create-hengine-app/issues"
+  },
+  "homepage": "https://github.com/huang2002/create-hengine-app#readme",
+  "devDependencies": {
+    "@types/node": "^12.6.2"
+  },
+  "dependencies": {
+    "3h-cli": "^1.5.0"
+  }
+}
