@@ -9,7 +9,8 @@ const DEFAULT_PORT = 8080;
 const cli = CLI.create({
     name: packageInfo.name,
     title: packageInfo.description,
-    lineGapSize: 1
+    lineGapSize: 1,
+    nameSize: 11,
 }).first({
     name: 'name',
     help: 'Your app name'
