@@ -1,7 +1,7 @@
 {
   "name": "create-hengine-app",
   "version": "0.1.0",
-  "description": "Init an `hengine` app.",
+  "description": "Create a development environment for `hengine`.",
   "main": "index.js",
   "private": true,
   "scripts": {
