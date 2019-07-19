@@ -2,7 +2,7 @@
     "name": "$appName$",
     "version": "0.1.0",
     "scripts": {
-        "start": "3h-serve dist",
+        "start": "3h-serve dist -p $port$",
         "test": "node test/server",
         "build": "rollup -c",
         "typecheck": "tsc"

@@ -4,6 +4,8 @@ const CLI = require('3h-cli'),
     packageInfo = require('./package.json'),
     { init, getLatestVersion, log } = require('./lib');
 
+const DEFAULT_PORT = 8080;
+
 const cli = CLI.create({
     name: packageInfo.name,
     title: packageInfo.description,
@@ -27,6 +29,12 @@ const cli = CLI.create({
     val: 'ver',
     help: 'The version of `hengine` to use\n' +
         'Default: the latest'
+}).arg({
+    name: 'p',
+    alias: ['-port'],
+    val: 'port',
+    help: 'The local server port to use\n' +
+        `Default: ${DEFAULT_PORT}`
 }).on('exec', args => {
     if (args.has('h')) {
         cli.help();
@@ -42,6 +50,7 @@ const cli = CLI.create({
                 dirName: args.has('d') ? args.get('d')[0] : appName,
                 appName,
                 libVersion: args.has('v') ? args.get('v')[0] : await getLatestVersion(),
+                port: args.has('p') ? args.get('p')[0] : DEFAULT_PORT,
             });
         })().catch(error => {
             log(`An error occurred: ${error}`);

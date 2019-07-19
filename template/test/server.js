@@ -11,6 +11,7 @@ const HOMEPAGE_PATTERN = /^\/(?:index(?:\.html|\/)?)?$/,
 
 crtServer({
     dir: join(__dirname, '..'),
+    port: $port$,
     filter: ({ url }) => {
         if (SRC_PATTERN.test(url)) {
             return `/src${RegExp.$1}`;
