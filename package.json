@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/huang2002/create-hengine-app#readme",
   "devDependencies": {
+    "3h-serve": "^0.6.2",
     "@types/node": "^12.6.2"
   },
   "dependencies": {
