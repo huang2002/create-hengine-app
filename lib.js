@@ -26,7 +26,7 @@ const generate = (fileName, variables) => {
     writeFileSync(
         fileName,
         Object.entries(variables).reduce(
-            (content, [key, value]) => content.replace(new RegExp(`__${key}__`, 'g'), value),
+            (content, [key, value]) => content.replace(new RegExp(`$${key}$`, 'g'), value),
             readFileSync(join(__dirname, 'template', fileName), ENCODING)
         )
     );
