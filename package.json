@@ -5,7 +5,8 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "rm -r test & node index -h & node index demo -d test"
+    "test": "rm -r test & node index demo -d test",
+    "help": "node index -h"
   },
   "repository": {
     "type": "git",
