@@ -32,6 +32,11 @@ const cli = CLI.create({
         cli.help();
     } else {
         (async () => {
+            if (!args.has('name')) {
+                cli.help();
+                console.log();
+                throw "Missing app name!";
+            }
             const appName = args.get('name')[0];
             init({
                 dirName: args.has('d') ? args.get('d')[0] : appName,
