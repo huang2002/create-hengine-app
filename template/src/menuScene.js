@@ -1,4 +1,3 @@
-// @ts-check
 /// <reference types="hengine"/>
 import { engine } from "./common.js";
 

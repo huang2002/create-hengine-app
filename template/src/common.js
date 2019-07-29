@@ -1,4 +1,3 @@
-// @ts-check
 /// <reference types="hengine"/>
 export const renderer = new HE.Renderer({
     // width: 480,
