@@ -34,7 +34,7 @@ const cli = CLI.create({
     name: 'p',
     alias: ['-port'],
     val: 'port',
-    help: 'The local server port to use\n' +
+    help: 'The local port to use\n' +
         `Default: ${DEFAULT_PORT}`
 }).on('exec', args => {
     if (args.has('h')) {
