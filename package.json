@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "Create a development environment for your `hengine` app.",
   "main": "index.js",
-  "private": true,
   "scripts": {
     "test": "rm -r test & node index demo -d test",
     "help": "node index -h"
