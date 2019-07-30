@@ -81,7 +81,7 @@ If you want to get the production version of your app, execute `npm run build` t
 
 The development environment also provides type checking functionality so that the intellisense functionalities of your editor can work properly. Besides, you can execute `npm run typecheck` to do type checking manually and modify `/tsconfig.json` to customize your TypeScript settings. For more information about `TypeScript`, please visit its official website: [www.typescriptlang.org](https://www.typescriptlang.org).
 
-By the way, please note that only script files should be placed in the `src` folder and other resource files should be put in the `dist` folder and referenced relative to `/dist`. For example, the initial style sheet file, `/dist/index.css`, is referenced in index pages as `./index.css`.
+By the way, please note that only script files should be placed in the `src` folder and other resource files should be put in the `dist` folder and referenced relative to `/dist`. For instance, the initial style sheet file, `/dist/index.css`, is referenced in index pages as `./index.css`. Moreover, the scripts are loaded as modules in the development server, so you have to use the global variable `HE` to access the APIs instead of importing them from the module `hengine` and you can refer to the given initial code to get an example.
 
 ## Links
 
