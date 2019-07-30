@@ -33,6 +33,11 @@ create-hengine-app <name> [options]
                        Default: 8080
 ```
 
+Please note that if you omit the version of `hengine` to use, the latest version will be fetched and adopted as input. If you want to change the version after initialization, just follow this:
+
+1. Execute `npm i -D hengine@<version>` to update the development dependency where `<version>` should be replaced with the version you want.
+2. Open `/dist/index.html` and modify the lib version to load. (`/test/index.html` loads the lib from the development dependency, so don't worry about it.)
+
 ## Workflow
 
 This package initializes a typical development workflow for `hengine` which is explained below.
