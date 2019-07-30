@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // @ts-check
 const CLI = require('3h-cli'),
     // @ts-ignore
