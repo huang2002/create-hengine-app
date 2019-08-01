@@ -1,4 +1,3 @@
-/// <reference types="hengine"/>
 import { engine } from "./common.js";
 
 export const menuScene = engine.createScene({
